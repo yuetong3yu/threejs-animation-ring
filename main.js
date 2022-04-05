@@ -1,2 +1,2 @@
 import './style.css'
-import './three.js'
+import './components/three'
