@@ -2,6 +2,7 @@ import * as Three from 'three'
 
 import { torus } from './torus'
 import { pointLight, ambientLight, pointerHelper } from './lights'
+import { gridHelper } from './/helpers'
 
 const scence = new Three.Scene()
 
@@ -20,7 +21,7 @@ renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 camera.position.setZ(30)
 
-scence.add(torus, pointLight, ambientLight, pointerHelper)
+scence.add(torus, pointLight, ambientLight, pointerHelper, gridHelper)
 
 autoRender()
 
