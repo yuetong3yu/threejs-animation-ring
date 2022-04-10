@@ -1,3 +1,3 @@
 # A Ring
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h14m3tsp4cg21ef0u0aaq.gif)
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/48756922/162605650-61a24cdb-e420-4953-8b51-6cd82e79effa.png">
