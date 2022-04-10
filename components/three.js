@@ -1,4 +1,5 @@
 import * as Three from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 import { torus } from './torus'
 import { pointLight, ambientLight, pointerHelper } from './lights'
@@ -17,6 +18,8 @@ const renderer = new Three.WebGL1Renderer({
   canvas: document.getElementById('bg'),
 })
 
+const orbitControls = new OrbitControls(camera, renderer.domElement)
+
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 camera.position.setZ(30)
@@ -31,6 +34,8 @@ function autoRender() {
   torus.rotation.x += 0.01
   torus.rotation.y += 0.005
   torus.rotation.z += 0.01
+
+  orbitControls.update()
 
   renderer.render(scence, camera)
 }
